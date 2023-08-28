@@ -5,11 +5,10 @@ int main() {
 
     int num; cin >> num;
 
-    for(int i=1; i<=num; i++) {
-        for(int j=1; j<= 2*num-1; j++) {
-            // cout << "*";
-            if(j-1 == num-i || j == num+i-1 || i==num) cout << "*";
-            else if(j-1 < num-i || j < num+i-1) cout << ".";
+    for(int i=num; i>0; i--) {
+        for(int j = (num*-1)+1; j < num; j++) {
+            if(abs(j) == num-i || i==1) cout << "*";
+            else if(j <= num-i) cout << ".";
             else cout << " ";
         }
         cout << '\n';

@@ -12,7 +12,7 @@ int main() {
             break;
         }
         int y; cin >> y;
-
+    
         if(i%2 == 0) {
             zig_min = min(zig_min, x);
             zig_max = max(zig_max, y);
