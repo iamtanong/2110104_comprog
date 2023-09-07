@@ -7,6 +7,7 @@ int main() {
     int arr_size = (num*num)-1;
     int arr[arr_size];
     int space_line;
+    
     for(int i=0; i<arr_size; i++) {
         int n; cin >> n;
         if(n==0) {
